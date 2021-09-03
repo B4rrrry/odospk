@@ -1,0 +1,111 @@
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider .slick-initialized{}
+/* Слайдер с точками */
+.slick-slider .slick-dotted{}
+/* Ограничивающая оболочка */
+.reviews-slider .slick-list {
+    width: 541px;
+    overflow: hidden;
+    margin:0 auto;
+}
+/* Лента слайдов */
+.reviews-slider .slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*Конкретный слайдер*/
+.reviews-slider
+{
+    position: relative;
+    padding: 0 0 0 0px;
+    width: 541px;
+    margin: 0 auto;
+    z-index: 2;
+}
+.reviews-slider .slick-arrow {
+    position: absolute;
+    top: 91px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    margin-top: -30px;
+    height: 60px;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+/*Левая стрелочка*/
+.reviews-slider .slick-arrow.slick-prev {
+    left: -58px;
+    background: url(../img/reviews/slider/prev.svg) 0 0/100% no-repeat;
+    background-size: 12px 25px;
+}
+.reviews-slider .slick-arrow.slick-next {
+    right: -58px;
+    background: url(../img/reviews/slider/next.svg) 0 0/100% no-repeat;
+    background-size: 12px 25px;
+}
+/*Если слайдер достигнет конца,то кнопка пропадает
+*/
+.reviews-slider .slick-arrow .slick-disabled
+{
+    opacity: 0.2;
+}
+.reviews-slider .slick-dots 
+{
+    display: flex;
+    align-items: center;
+}
+.reviews-slider .slick-dots li
+{
+    list-style: none;
+    margin:0 10px;
+}
+/*Точки*/
+.reviews-slider .slick-dots button{
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+    background-color: #000;
+    opacity: 0.5;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+}
+.reviews-slider .slick-dots li.slick-active button{
+	background-color: transparent;
+    background-color: #000;
+    opacity: 1;
+}
+.reviews-slider__item
+{
+  display: flex;
+}
